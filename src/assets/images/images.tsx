@@ -1,0 +1,20 @@
+import heroImg from "./trafalgar.svg";
+import logoImg from "./Group 7.svg";
+import search from "./search.svg";
+import medicine from "./medicine.svg";
+import consulation from "./consult.svg";
+import details from "./details.svg";
+import emergency from "./Emergency.svg";
+import tracking from "./tracking.svg";
+
+
+export 
+{       heroImg,
+        logoImg,
+        search,
+        medicine,
+        consulation,
+        details,
+        emergency,
+        tracking
+};

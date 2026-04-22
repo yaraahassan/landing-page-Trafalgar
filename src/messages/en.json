@@ -1,0 +1,40 @@
+{
+  "HomePage": {
+    "navbar":{
+      "home":"Home",
+      "find":"Find a doctor",
+      "apps":"Apps",
+      "testimonials":"Testimonials",
+      "about":"About us"
+    },
+    "services":{
+      "box1":{
+        "title1":"Search doctor",
+        "text1":"Choose your doctor from thousands of specialist, general, and trusted hospitals"
+      },
+        "box2":{
+        "title2":"Online pharmacy",
+        "text2":"Buy  your medicines with our mobile application with a simple delivery system"
+      },
+        "box3":{
+        "title3":"Consultation",
+        "text3":"Free consultation with our trusted doctors and get the best recomendations"
+      },
+        "box4":{
+        "title4":"Details info",
+        "text4":"Free consultation with our trusted doctors and get the best recomendations"
+      },
+        "box5":{
+        "title5":"Emergency care",
+        "text5":"You can get 24/7 urgent care for yourself or your children and your lovely family"
+      },
+        "box6":{
+        "title6":"Tracking",
+        "text6":"Track and save your medical history and health data "
+      }
+      
+      
+      
+    }
+  }
+}
