@@ -6,6 +6,7 @@ import consulation from "./consult.svg";
 import details from "./details.svg";
 import emergency from "./Emergency.svg";
 import tracking from "./tracking.svg";
+import trafalgar from "./trafalgar.svg";
 
 
 export 
@@ -16,5 +17,6 @@ export
         consulation,
         details,
         emergency,
-        tracking
+        tracking,
+        trafalgar
 };

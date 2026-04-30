@@ -7,6 +7,11 @@
       "testimonials":"Testimonials",
       "about":"About us"
     },
+    "HeroSection":{
+      "title":"Virtual healthcare for you",
+      "text":"Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online or everyone",
+      "btn":"Consult today"
+    },
     "services":{
       "box1":{
         "title1":"Search doctor",

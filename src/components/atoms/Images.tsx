@@ -19,7 +19,7 @@ export default function Images({
   priority = false,
   center=false,
 }: Props) {
-  const baseClasses = "w-full  flex justify-end items-center";
+  const baseClasses = "w-full  flex justify-start items-center";
   return (
     <div className={cn(baseClasses)}>
       <Image
