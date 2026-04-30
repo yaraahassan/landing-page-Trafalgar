@@ -1,7 +1,7 @@
 import { cn } from "@/lib/cn";
 
 interface props{
-size?:"sm"|"md"|"lg"|"xxxxxl";
+size?:"sm"|"md"|"lg"|"xl"|"xxxxxl";
 varient?:"des"|"btn1"|"btn2"|"title";
 children?:React.ReactNode;
 className?:string;
@@ -19,6 +19,7 @@ export default function Title({
         sm:"ds-text-sm",
         md:"ds-text-base",
         lg:"ds-text-lg",
+        xl:"ds-text-xl",
         xxxxxl:"text-5xl",
     };
     const varients={
