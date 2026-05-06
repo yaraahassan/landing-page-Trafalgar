@@ -38,10 +38,22 @@
         "box6":{
         "title6":"Tracking",
         "text6":"Track and save your medical history and health data "
-      }
+      },
+      "btn":"Learn more"
       
       
       
+    },
+    "Herosection2":{
+      "title":"Leading healthcare providers",
+      "text":"Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone. To us, it’s not just work. We take pride in the solutions we deliver",
+      "btn":"Learn more"
+    },
+
+      "Herosection3":{
+      "title":"Download our mobile apps",
+      "text":"Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely",
+      "btn":"Download"
     }
   }
 }

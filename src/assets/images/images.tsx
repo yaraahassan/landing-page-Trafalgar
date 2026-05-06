@@ -7,7 +7,8 @@ import details from "./details.svg";
 import emergency from "./Emergency.svg";
 import tracking from "./tracking.svg";
 import trafalgar from "./trafalgar.svg";
-
+import illustration from "./illustration.svg"
+import sec03 from "./sec03.svg"
 
 export 
 {       heroImg,
@@ -18,5 +19,7 @@ export
         details,
         emergency,
         tracking,
-        trafalgar
+        trafalgar,
+        illustration,
+        sec03
 };

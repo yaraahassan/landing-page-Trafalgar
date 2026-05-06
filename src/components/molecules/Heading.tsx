@@ -9,9 +9,11 @@ interface props{
 export default function Heading({title,text}:props) {
   const t=useTranslations();
   return (
-    <div className="">
-        <Title center={true} size="xl" >{t(title)}</Title>
-        <Text center={true} size="md" className="w-502">{t(text)}</Text>
+    <div className="w-[68%] mt-48 mx-auto mb-20">
+        <Title center={true} size="xl">{t(title)}</Title>
+        <Text center={true} size="md">{t(text)}</Text>
+        
     </div>
+    
   )
 }
