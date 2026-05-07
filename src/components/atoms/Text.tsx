@@ -10,7 +10,7 @@ center?:boolean;
 
 export default function Text({
     size="md",
-    varient="des",
+    varient="btn1",
     children,
     className="capitalize pt-2",
     center

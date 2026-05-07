@@ -10,7 +10,7 @@ center?:boolean;
 
 export default function Title({
     size="md",
-    varient="title",
+    varient="btn1",
     children,
     className="capitalize pt-2 text-bold",
     center

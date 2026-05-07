@@ -15,7 +15,7 @@ export default function Box({imgs,title,text}:props) {
     <div className="ds-bg-alt w-75 ds-rounded-lg py-4 px-6 gap-y-4 ds-shadow-lg flex flex-col items-start">
         <Images src={imgs} alt="services-imgs" center={false} />
         <Title varient="title">{t(title)}</Title>
-        <Text>{t(text)}</Text>
+        <Text varient="des">{t(text)}</Text>
     </div>
   )
 }
