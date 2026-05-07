@@ -15,8 +15,8 @@ export default function HeroSection({title,text,btn,img}:props) {
   return (
     <div className="flex justify-between items-center ">
         <div className="flex flex-col w-[31%] h-[33%] gap-y-6">
-            <Title size="xxxxxl">{t(title)}</Title>
-            <Text size="lg">{t(text)}</Text>
+            <Title size="xxxxxl" varient="title">{t(title)}</Title>
+            <Text size="lg" varient="des">{t(text)}</Text>
             <Button isRounded={true} center={false}>{t(btn)}</Button>
         </div>
         <div>

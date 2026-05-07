@@ -9,6 +9,7 @@ import tracking from "./tracking.svg";
 import trafalgar from "./trafalgar.svg";
 import illustration from "./illustration.svg"
 import sec03 from "./sec03.svg"
+import Group5 from "./Group 5.svg"
 
 export 
 {       heroImg,
@@ -21,5 +22,6 @@ export
         tracking,
         trafalgar,
         illustration,
-        sec03
+        sec03,
+        Group5
 };
