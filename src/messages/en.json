@@ -54,6 +54,12 @@
       "title":"Download our mobile apps",
       "text":"Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely",
       "btn":"Download"
+    },
+    "customerSays":{
+      "maintitle":"What our customer are saying",
+      "maintext":"Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely",
+     "title":"Edward Newgate",
+     "text":"Founder Circle"
     }
   }
 }
