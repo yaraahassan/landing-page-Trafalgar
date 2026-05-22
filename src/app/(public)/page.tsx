@@ -4,6 +4,7 @@ import CustomerSays from '@/modules/landing/components/CustomerSays';
 import HeroSection2 from '@/modules/landing/components/HeroSection2';
 import Herosection3 from '@/modules/landing/components/Herosection3';
 import HeroSextion1 from '@/modules/landing/components/HeroSextion1';
+import LatestArticle from '@/modules/landing/components/LatestArticle';
 import Services from '@/modules/landing/components/Services';
 import {useTranslations} from 'next-intl';
 export default function page() {
@@ -16,6 +17,7 @@ export default function page() {
           <HeroSection2/>
           <Herosection3/>
           <CustomerSays/>
+          <LatestArticle/>
             
 
 

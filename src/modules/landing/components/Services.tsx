@@ -7,7 +7,7 @@ import { useTranslations } from "next-intl";
 export default function Services() {
   const t=useTranslations();
   return (
-    <div className="">
+    <div className="mb-35">
         <Heading  
         title="HomePage.services.title" 
         text="HomePage.services.text"

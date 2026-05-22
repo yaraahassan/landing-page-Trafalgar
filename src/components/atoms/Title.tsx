@@ -16,10 +16,10 @@ export default function Title({
     center
 }:props) {
     const sizes={
-        sm:"ds-text-sm",
-        md:"ds-text-base",
-        lg:"ds-text-lg",
-        xl:"ds-text-xl",
+        sm:"text-sm",
+        md:"text-base",
+        lg:"text-lg",
+        xl:"text-xl",
         xxxxxl:"text-5xl",
     };
     const varients={

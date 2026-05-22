@@ -9,7 +9,10 @@ export default function HeroSection2() {
           title={t("HomePage.Herosection2.title")}
           text={t("HomePage.Herosection2.text")}
            btn={t("HomePage.Herosection2.btn")}
-           img={illustration}/>
+           img={illustration}
+           reverse={true}/>
+          
+
     </div>
   )
 }

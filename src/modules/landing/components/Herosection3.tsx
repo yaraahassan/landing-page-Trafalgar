@@ -5,7 +5,7 @@ import {sec03} from "@/assets/images/images";
 export default function Herosection3() {
     const t=useTranslations();
   return (
-    <div>
+    <div className="mt-35">
         <HeroSection
             title={t("HomePage.Herosection3.title")}
             text={t("HomePage.Herosection3.text")}

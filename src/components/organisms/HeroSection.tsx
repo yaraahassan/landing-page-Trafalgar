@@ -9,11 +9,12 @@ interface props{
         text:string;
         btn:string;
         img:string;
+        reverse:boolean;
     }
-export default function HeroSection({title,text,btn,img}:props) {
+export default function HeroSection({title,text,btn,img, reverse=false}:props) {
  const t=useTranslations()
   return (
-    <div className="flex justify-between items-center ">
+    <div className={`"max-w-[90%] mx-auto flex justify-between items-center " ${reverse ? "flex-row-reverse" : "flex-row"}`}>
         <div className="flex flex-col w-[31%] h-[33%] gap-y-6">
             <Title size="xxxxxl" varient="title">{t(title)}</Title>
             <Text size="lg" varient="des">{t(text)}</Text>

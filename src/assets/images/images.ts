@@ -10,6 +10,10 @@ import trafalgar from "./trafalgar.svg";
 import illustration from "./illustration.svg"
 import sec03 from "./sec03.svg"
 import Group5 from "./Group 5.svg"
+import skin from "./skin.svg"
+import check1 from "./check1.svg"
+import check2 from "./check2.svg"
+
 
 export 
 {       heroImg,
@@ -23,5 +27,8 @@ export
         trafalgar,
         illustration,
         sec03,
-        Group5
+        Group5,
+        skin,
+        check1,
+        check2
 };
