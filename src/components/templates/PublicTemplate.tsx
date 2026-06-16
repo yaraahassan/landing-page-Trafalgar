@@ -1,5 +1,5 @@
 import Navbar from "../organisms/Navbar";
-// import Footer from "../organisms/Footer";
+import Footer from "../organisms/Footer";
 
 interface Props {
   children: React.ReactNode;
@@ -9,7 +9,7 @@ export default function PublicTemplate({ children }: Props) {
     <div>
       <Navbar />
       <main className="ds-container">{children}</main>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
