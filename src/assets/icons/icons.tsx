@@ -1,4 +1,4 @@
-import { ArrowRight,Sun,Moon } from 'lucide-react';
+import { ArrowRight,Sun,Moon ,TextAlignJustify } from 'lucide-react';
 
 
-export { ArrowRight,Sun,Moon };
+export { ArrowRight,Sun,Moon ,TextAlignJustify};

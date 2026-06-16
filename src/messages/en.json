@@ -83,6 +83,22 @@
       },
       "mainBtn":"View All"
 
+    },
+    "footer":{
+      "text":"Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone",
+      "copyright":"©Trafalgar PTY LTD 2020. All rights reserved",
+      "title1":"Company",
+      "title2":"Region",
+      "text2":"Indonesia",
+      "text3":"Singapore",
+      "text4":"Hongkong",
+      "text5":"Canada",
+      "title3":"Help",
+      "text6":"Help center",
+      "text7":"Contact support",
+      "text8":"Instructions",
+      "text9":"How it works"
+
     }
   }
 }
