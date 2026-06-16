@@ -25,6 +25,8 @@ export default function Title({
     const varients={
        title:"ds-text-title",
        btn1:"ds-text-btn1",
+       des:"ds-text-des",
+       btn2:"ds-text-btn2"
     };
 
 
