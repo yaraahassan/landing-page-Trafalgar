@@ -11,6 +11,8 @@ export default function Herosection3() {
             text={t("HomePage.Herosection3.text")}
             btn={t("HomePage.Herosection3.btn")}
             img={sec03}
+            reverse={false}
+
         />
     </div>
   )

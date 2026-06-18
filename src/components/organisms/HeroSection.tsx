@@ -9,7 +9,7 @@ interface props{
         text:string;
         btn:string;
         img:string;
-        reverse:boolean;
+        reverse?:boolean;
     }
 export default function HeroSection({title,text,btn,img, reverse=false}:props) {
  const t=useTranslations()
