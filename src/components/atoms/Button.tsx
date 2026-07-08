@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children?: ReactNode;
-  variant?: "primary" | "bg"|"outline1" ;
+  variant?: "primary" | "bg"|"outline1"|"ghost"|"outline2" ;
   tag?: "button" | "link";
   href?: string;
   size?: "sm" | "md" | "lg" | "xl";
@@ -41,7 +41,9 @@ const Button = ({
     ghost: "ds-text-primary capitalize cursor-pointer",
     outline1:
       "border-2 ds-text-alt  capitalize focus:ring-primary-500 cursor-pointer",
-  };
+  outline2:
+      "ds-bg ds-text-btn2 capitalize focus:ring-blue-500 cursor-pointer hover:opacity-95",
+    };
 
   const sizes = {
     sm: "px-3 py-1.5 text-sm",
