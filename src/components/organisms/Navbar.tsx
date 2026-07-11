@@ -5,13 +5,25 @@ import { ThemeToggle } from "../atoms/ThemeButton";
 import { useTranslations } from "next-intl";
 import { navDataLinks } from "@/utils/data";
 import {TextAlignJustify} from "@/assets/icons/icons"
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { X } from "lucide-react";
-
+import { TokenService } from "@/services/tokenService";
+import { useRouter } from "next/navigation";
 export default function Navbar() {
   const [isClicked,setIsClicked]=useState(false)
 
-  const t=useTranslations()
+  const t=useTranslations();
+  const router = useRouter();
+
+  useEffect(()=>{
+  const accessToken=TokenService.getToken();
+    console.log(accessToken);
+
+  if(accessToken){
+    router.replace("/")
+  }
+},[router])
+
   return (
     <nav className="ds-container flex justify-between items-center py-6">
         <Logo />
