@@ -7,12 +7,15 @@ import { FcGoogle } from "react-icons/fc";
 import { FaGithub } from "react-icons/fa";
 import InputForm from "@/components/atoms/Input";
 import useSignInApi from "../../hooks/useSignInApi";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { TokenService } from "@/services/tokenService";
+import { useRouter } from "next/navigation";
 
 
 
 export default function Login() {
     const {mutate,isPending}=useSignInApi();
+    const router=useRouter()
     const [form,setForm]=useState({
         email:"",
         password:""
@@ -28,7 +31,8 @@ console.log(form);
         e.preventDefault();
         mutate(form,{
             onSuccess:()=>{
-                alert("تم تسجيل الدخول بنجاح")
+                alert("تم تسجيل الدخول بنجاح");
+                 
             },
             onError:()=>{
                 alert("فشل تسجيل الدخول حاول مرة اخري")

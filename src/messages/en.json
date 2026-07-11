@@ -100,5 +100,26 @@
       "text9":"How it works"
 
     }
+  },
+  "auth":{
+    "signin":{
+
+    },
+    "signup":{
+      "desc-title":"Already have an account?",
+      "desc-text":"Stay in the loop — log in now!",
+      "desc-btn":"SIGN IN",
+      "form-title":"Create Account",
+      "form-desc":"Or register using your email address",
+      "form-input1":"Name",
+      "form-input2":"E-mail",
+      "form-input3":"Password",
+      "form-input4":"Confirm Password",
+      "form-input5":"Agree with ",
+      "form-input6":"Terms &Condition",
+      "form-btn1":"Loading",
+      "form-btn2":"SIGN UP"
+
+    }
   }
 }
