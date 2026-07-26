@@ -8,14 +8,17 @@ import { FcGoogle,FaGithub} from "@/assets/icons/icons"
 import InputForm from '@/components/atoms/Input'
 import useSignUP from '../hooks/useSignUP'
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 
 export default function SignUpForm() {
+    const router=useRouter();
     const {mutate,isPending}=useSignUP();
     const t=useTranslations();
     const [form,setForm]=useState({
+        name:"",
         email:"",
         password:"",
-        name:""
+        confirmPassword:""
     })
 
     const handleChange=(e:React.ChangeEvent<HTMLInputElement>)=>{
@@ -27,13 +30,40 @@ export default function SignUpForm() {
 
     const handleSubmit=(e:React.FormEvent)=>{
         e.preventDefault();
-        mutate(form,{
+
+        const {confirmPassword,...data}=form;
+        mutate(data,{
             onSuccess:()=>{
                 alert('تم تسجيل دخول مستخدم جديد بنجاح')
+                router.push(`/otp-register?email=${form.email}`)
             },
-            onError:()=>{
-                alert("فشل حاول ثانية")
-            }
+            // onError:(err)=>{
+            //     console.log(err);
+            //     // alert("فشل حاول ثانية")
+            //       alert(err.response?.data?.message || "حدث خطأ");
+
+            // }
+            
+//             onError: (err: any) => {
+//   console.log("Status:", err.response?.status);
+//   console.log("Data:", err.response?.data);
+//                   alert("فشل حاول ثانية")
+                  
+
+// }
+
+onError: (err: any) => {
+  console.log("Status:", err.response?.status);
+
+  console.log("Response Data:", err.response?.data);
+
+  console.log(
+    "Response Data JSON:",
+    JSON.stringify(err.response?.data, null, 2)
+  );
+
+  alert(err.response?.data?.message || "حدث خطأ");
+}
         })
 
     }
@@ -69,7 +99,7 @@ export default function SignUpForm() {
                     <InputForm type="text" placeholder={t("auth.signup.form-input1")} name="name"onChange={handleChange} containerClassName='w-100'/>
                     <InputForm type="email" placeholder={t("auth.signup.form-input2")} name="email" onChange={handleChange}/>
                     <InputForm type="password" placeholder={t("auth.signup.form-input3")} name="password" onChange={handleChange}/>
-                    <InputForm type="password" placeholder={t("auth.signup.form-input4")} name="confirm-password" onChange={handleChange}/>
+                    <InputForm type="password" placeholder={t("auth.signup.form-input4")} name="confirmPassword" onChange={handleChange}/>
                     <div className='flex relative '>
                         <InputForm type='checkbox'className='absolute scale-50 -left-45 -top-2'/>
                         <p className='absolute left-10  '>{t("auth.signup.form-input5")} <span className='ds-text-btn2'>{t("auth.signup.form-input6")}</span></p>

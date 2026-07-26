@@ -120,6 +120,16 @@
       "form-btn1":"Loading",
       "form-btn2":"SIGN UP"
 
+    },
+    "forget":{
+      "Login":"Login",
+      "sign":"Sign Up",
+      "title":"Forgot Password?",
+      "text":"Don't worry, we'll help you reset it.",
+      "input-placeholder":"Enter your email",
+      "btn1":"Reset Password",
+      "btn2":"Back to sign in"
+
     }
   }
 }

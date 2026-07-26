@@ -1,18 +1,17 @@
-"use client";
 import { useApiMutation } from "@/shared/hooks/useApiMutation";
-import signInApi from "../api/signInApi";
+import forgetApi from "../api/ForgetApi";
 import { useQueryClient } from "@tanstack/react-query";
 import { TokenService } from "@/services/tokenService";
 
-export default function useSignInApi() {
+export default function useForget() {
     const queryClient=useQueryClient()
   return useApiMutation({
-    mutationFn:signInApi, 
-    options:{
-        onSuccess:(data) =>{
-            queryClient.invalidateQueries({queryKey:["users"]});
+    mutationFn:forgetApi,
+     options:{
+        onSuccess:(data)=>{
+           queryClient.invalidateQueries({queryKey:["users"]});
             TokenService.setToken(data.accessToken); 
-                 },
-    }
+        }
+     }
   })
 }
