@@ -128,7 +128,15 @@
       "text":"Don't worry, we'll help you reset it.",
       "input-placeholder":"Enter your email",
       "btn1":"Reset Password",
-      "btn2":"Back to sign in"
+      "btn2":"Back to sign in",
+      "btn3":"Loading"
+
+
+    },
+    "done":{
+      "title":"Done",
+      "text":"Password reset complete! Use the button below to log in",
+      "btn":"Return to Login"
 
     }
   }

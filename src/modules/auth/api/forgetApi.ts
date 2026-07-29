@@ -9,6 +9,6 @@ interface forgetResponse{
         otp:string;
     }
 }
-export default function forgetApi(payload:forgetPayload):Promise<forgetResponse> {
+export default function ForgetApi(payload:forgetPayload):Promise<forgetResponse> {
   return ApiClient.post<forgetResponse>(`/auth/forgot-password`,payload)
 }
