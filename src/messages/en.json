@@ -133,6 +133,13 @@
 
 
     },
+    "otp-forget":{ 
+      "title":"Verify Your Identity",
+       "text1":"We’ve sent a 6-digit code to your email, Please enter it below to verify your account",
+        "text2":"This code will expire in 60 seconds",
+         "btn1":"Verify",
+          "btn2":"Send again"
+    },
     "done":{
       "title":"Done",
       "text":"Password reset complete! Use the button below to log in",
